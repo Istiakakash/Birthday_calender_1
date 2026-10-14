@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Inspiration - March</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body, html { height: 100%; font-family: 'Helvetica Neue', Arial, sans-serif; display: flex; justify-content: center; align-items: center; color: #ffffff; overflow: hidden; }
+        .background { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('March.jfif') no-repeat center center/cover; z-index: 1; }
+        .overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 2; }
+        .content-card { position: relative; z-index: 3; text-align: center; max-width: 85%; padding: 20px; display: flex; flex-direction: column; align-items: center; animation: fadeIn 1.2s ease-out; }
+        .photo-container { width: 16rem; height: 16rem; margin-bottom: 25px; background: #ffffff; padding: 4px; border-radius: 4px; box-shadow: 0 8px 20px rgba(0,0,0,0.4); transform: rotate(-4deg); transition: transform 0.3s ease; }
+        .photo-container:hover { transform: rotate(2deg) scale(1.05); }
+        .couple-photo { width: 100%; height: 100%; object-fit: cover; border-radius: 2px; }
+        .month-title { font-size: 1.1rem; text-transform: uppercase; letter-spacing: 4px; margin-bottom: 20px; opacity: 0.85; font-weight: 400; }
+        .quote-text { font-size: 2rem; line-height: 1.4; margin-bottom: 15px; font-weight: 300; font-style: italic; }
+        .author { font-size: 0.95rem; letter-spacing: 1px; opacity: 0.75; font-weight: 300; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(15px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="overlay"></div>
+    <div class="content-card">
+        <div class="photo-container">
+            <img class="couple-photo" src="March_1.JPG" alt="Our Photo">
+        </div>
+        <div class="month-title">March</div>
+        <div class="quote-text">"If I know what love is, it is because of you."</div>
+        <div class="author">— Hermann Hesse</div>
+    </div>
+</body>
+</html>
